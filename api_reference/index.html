@@ -8,8 +8,15 @@
       
       
       
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../changelog/">
+      
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -17,14 +24,14 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
-        
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
       
+
+
     
+    
+      
     
     
       
@@ -36,23 +43,18 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
+    
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -72,7 +74,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="makefun" class="md-header__button md-logo" aria-label="makefun" data-md-component="logo">
       
@@ -81,6 +85,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -101,8 +106,12 @@
     </div>
     
     
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -111,24 +120,27 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -140,7 +152,7 @@
         <a href="https://github.com/smarie/python-makefun" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -170,6 +182,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="makefun" class="md-nav__button md-logo" aria-label="makefun" data-md-component="logo">
@@ -185,7 +198,7 @@
       <a href="https://github.com/smarie/python-makefun" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -197,14 +210,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Home
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
       </a>
     </li>
   
@@ -212,28 +230,39 @@
     
       
       
-      
-
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          API reference
+          
+  
+  <span class="md-ellipsis">
+    API reference
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        API reference
+        
+  
+  <span class="md-ellipsis">
+    API reference
+  </span>
+  
+
       </a>
       
         
@@ -253,7 +282,9 @@
       
         <li class="md-nav__item">
   <a href="#main-symbols" class="md-nav__link">
-    Main symbols
+    <span class="md-ellipsis">
+      Main symbols
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Main symbols">
@@ -261,42 +292,54 @@
         
           <li class="md-nav__item">
   <a href="#create_function" class="md-nav__link">
-    create_function
+    <span class="md-ellipsis">
+      create_function
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#with_signature" class="md-nav__link">
-    @with_signature
+    <span class="md-ellipsis">
+      @with_signature
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#wraps" class="md-nav__link">
-    @wraps
+    <span class="md-ellipsis">
+      @wraps
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#create_wrapper" class="md-nav__link">
-    create_wrapper
+    <span class="md-ellipsis">
+      create_wrapper
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#partial" class="md-nav__link">
-    @partial
+    <span class="md-ellipsis">
+      @partial
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#with_partial" class="md-nav__link">
-    @with_partial
+    <span class="md-ellipsis">
+      @with_partial
+    </span>
   </a>
   
 </li>
@@ -308,7 +351,9 @@
       
         <li class="md-nav__item">
   <a href="#signature-editing-utils" class="md-nav__link">
-    Signature editing utils
+    <span class="md-ellipsis">
+      Signature editing utils
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Signature editing utils">
@@ -316,14 +361,18 @@
         
           <li class="md-nav__item">
   <a href="#add_signature_parameters" class="md-nav__link">
-    add_signature_parameters
+    <span class="md-ellipsis">
+      add_signature_parameters
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#remove_signature_parameters" class="md-nav__link">
-    remove_signature_parameters
+    <span class="md-ellipsis">
+      remove_signature_parameters
+    </span>
   </a>
   
 </li>
@@ -335,7 +384,9 @@
       
         <li class="md-nav__item">
   <a href="#pseudo-compilation" class="md-nav__link">
-    Pseudo-compilation
+    <span class="md-ellipsis">
+      Pseudo-compilation
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Pseudo-compilation">
@@ -343,7 +394,9 @@
         
           <li class="md-nav__item">
   <a href="#compile_fun" class="md-nav__link">
-    compile_fun
+    <span class="md-ellipsis">
+      compile_fun
+    </span>
   </a>
   
 </li>
@@ -363,14 +416,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../changelog/" class="md-nav__link">
-        Changelog
+        
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
       </a>
     </li>
   
@@ -404,7 +462,9 @@
       
         <li class="md-nav__item">
   <a href="#main-symbols" class="md-nav__link">
-    Main symbols
+    <span class="md-ellipsis">
+      Main symbols
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Main symbols">
@@ -412,42 +472,54 @@
         
           <li class="md-nav__item">
   <a href="#create_function" class="md-nav__link">
-    create_function
+    <span class="md-ellipsis">
+      create_function
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#with_signature" class="md-nav__link">
-    @with_signature
+    <span class="md-ellipsis">
+      @with_signature
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#wraps" class="md-nav__link">
-    @wraps
+    <span class="md-ellipsis">
+      @wraps
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#create_wrapper" class="md-nav__link">
-    create_wrapper
+    <span class="md-ellipsis">
+      create_wrapper
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#partial" class="md-nav__link">
-    @partial
+    <span class="md-ellipsis">
+      @partial
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#with_partial" class="md-nav__link">
-    @with_partial
+    <span class="md-ellipsis">
+      @with_partial
+    </span>
   </a>
   
 </li>
@@ -459,7 +531,9 @@
       
         <li class="md-nav__item">
   <a href="#signature-editing-utils" class="md-nav__link">
-    Signature editing utils
+    <span class="md-ellipsis">
+      Signature editing utils
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Signature editing utils">
@@ -467,14 +541,18 @@
         
           <li class="md-nav__item">
   <a href="#add_signature_parameters" class="md-nav__link">
-    add_signature_parameters
+    <span class="md-ellipsis">
+      add_signature_parameters
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#remove_signature_parameters" class="md-nav__link">
-    remove_signature_parameters
+    <span class="md-ellipsis">
+      remove_signature_parameters
+    </span>
   </a>
   
 </li>
@@ -486,7 +564,9 @@
       
         <li class="md-nav__item">
   <a href="#pseudo-compilation" class="md-nav__link">
-    Pseudo-compilation
+    <span class="md-ellipsis">
+      Pseudo-compilation
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Pseudo-compilation">
@@ -494,7 +574,9 @@
         
           <li class="md-nav__item">
   <a href="#compile_fun" class="md-nav__link">
-    compile_fun
+    <span class="md-ellipsis">
+      compile_fun
+    </span>
   </a>
   
 </li>
@@ -512,14 +594,14 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/smarie/python-makefun/edit/main/docs/api_reference.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+                  
 
+  
+  
 
 
 <h1 id="api-reference">API reference<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h1>
@@ -682,11 +764,11 @@
 <p>relies on a proper dynamically-generated function. Therefore as opposed to <code>functools.wraps</code>, </p>
 <ul>
 <li>the wrapper body will not be executed if the arguments provided are not compliant with the signature - instead a <code>TypeError</code> will be raised before entering the wrapper body. </li>
-<li>the arguments will always be received as keywords by the wrapper, when possible. See <a href="..#signature-preserving-function-wrappers">documentation</a> for details.</li>
+<li>the arguments will always be received as keywords by the wrapper, when possible. See <a href="../#signature-preserving-function-wrappers">documentation</a> for details.</li>
 </ul>
 </li>
 <li>
-<p><strong>you can modify the signature</strong> of the resulting function, by providing a new one with <code>new_sig</code> or by providing a list of arguments to remove in <code>remove_args</code>, to prepend in <code>prepend_args</code>, or to append in <code>append_args</code>. See documentation on <a href="..#editing-a-signature">full</a> and <a href="..#easier-edits">quick</a> signature edits for details.</p>
+<p><strong>you can modify the signature</strong> of the resulting function, by providing a new one with <code>new_sig</code> or by providing a list of arguments to remove in <code>remove_args</code>, to prepend in <code>prepend_args</code>, or to append in <code>append_args</code>. See documentation on <a href="../#editing-a-signature">full</a> and <a href="../#easier-edits">quick</a> signature edits for details.</p>
 </li>
 </ul>
 <p>Comparison with <code>@with_signature</code>: <code>@wraps(f)</code> is equivalent to</p>
@@ -700,7 +782,7 @@
                  **attrs)`
 </code></pre></div>
 <p>In other words, as opposed to <code>@with_signature</code>, the metadata (doc, module name, etc.) is provided by the wrapped <code>wrapped_fun</code>, so that the created function seems to be identical (except possiblyfor the signature). Note that all options in <code>with_signature</code> can still be overrided using parameters of <code>@wraps</code>.</p>
-<p>If the signature is <em>not</em> modified through <code>new_sig</code>, <code>remove_args</code>, <code>append_args</code> or <code>prepend_args</code>, the additional <code>__wrapped__</code> attribute  on the created function, to stay consistent with the <code>functools.wraps</code> behaviour.</p>
+<p>The additional <code>__wrapped__</code> attribute is added on the created function, to stay consistent with the <code>functools.wraps</code> behaviour. If the signature is modified through <code>new_sig</code>, <code>remove_args</code>, <code>append_args</code> or <code>prepend_args</code>, the <code>__signature__</code> attribute will be added per <a href="https://peps.python.org/pep-0362/">PEP 362</a>.</p>
 <p>See also <a href="https://docs.python.org/3/library/functools.html#functools.wraps">python documentation on @wraps</a></p>
 <p><strong>Parameters</strong></p>
 <ul>
@@ -774,7 +856,7 @@
 </code></pre></div>
 <p>Equivalent of <code>functools.partial</code> but relies on a dynamically-created function. As a result the function
 looks nicer to users in terms of apparent documentation, name, etc.</p>
-<p>See <a href="..#removing-parameters-easily">documentation</a> for details.</p>
+<p>See <a href="../#removing-parameters-easily">documentation</a> for details.</p>
 <h3 id="with_partial"><code>@with_partial</code><a class="headerlink" href="#with_partial" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">with_partial</span><span class="p">(</span><span class="o">*</span><span class="n">preset_pos_args</span><span class="p">,</span> 
                  <span class="o">**</span><span class="n">preset_kwargs</span>
@@ -806,51 +888,28 @@ looks nicer to users in terms of apparent documentation, name, etc.</p>
 <h2 id="pseudo-compilation">Pseudo-compilation<a class="headerlink" href="#pseudo-compilation" title="Permanent link">&para;</a></h2>
 <h3 id="compile_fun"><code>compile_fun</code><a class="headerlink" href="#compile_fun" title="Permanent link">&para;</a></h3>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Home
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../changelog/" class="md-footer__link md-footer__link--next" aria-label="Next: Changelog" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Changelog
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -872,10 +931,12 @@ looks nicer to users in terms of apparent documentation, name, etc.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
